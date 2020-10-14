@@ -1,0 +1,16 @@
+title: Веб программ кодлох
+description: Өөрийн ажлын дадлага туршлагаа веб программ болгон үйл ажиллагаандаа ашиглах
+template:
+  repo: veb-programm-kodloh-template
+  name: veb-programm-kodloh
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
